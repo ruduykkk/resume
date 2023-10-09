@@ -6,37 +6,50 @@
     <meta name="keywords" content="resume, course, cv,  Maxim">
     <meta name="description" content="Это сайт - резюме Максима Рудюка">
     <title>Maxim resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <img src="photo.jpg" alt="Максим Рудюк" width="200">
 
+    <div class="container">
+
+    
+
+<div class="info">
+    <img src="photo.jpg" alt="Максим Рудюк" class="avatar">
+<div class="info-text">
     <h1>Максим Рудюк</h1>
 
     <p>Я начинающий Frontend-разработчик на языке программирования <strong>JavaScript</strong></p>
 
     <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
 
+<div class="card bg-green">
     <h4>Список социальных сетей:</h4>
     <a href="https://instagram.com/_ruduyk_?igshid=NTc4MTIwNjQ2YQ==" target="_blank">Instagram</a>
     |
     <a href="https:/t.me/ruduykkk" target="_blank">Telegram</a>
     |
     <a href="https://vk.com/ruduykkk" target="_blank">Vkontakte</a>
+</div>
+</div>
+</div>
 
+<div class="card bg-red">
     <h2>Мои хобби</h2>
 
-    <ol>
+    <ol class="list">
         <li>Путешествовия</li>
         <li>Программирование</li>
         <li>Горные лыжи</li>
     </ol>
+</div>
 
 
+<div class="card bg-yellow">
     <h1>Опыт работы</h1>
 
 
-    <table border="2" width="400">
+    <table class="table">
         <thead>
             <tr>
                 <th>Название компании</th>
@@ -59,7 +72,34 @@
     </tbody>
 
     </table>
+</div>
+</div>
 
+
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="text" id="email" placeholder="Введите email">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Ваше сообщение:</label>
+        <textarea id="message" cols="20" rows="5"></textarea>
+    </div>
+
+    <input class="btn" type="submit" value="Отправить!">
+</form>
 
 </body>
 </html>
